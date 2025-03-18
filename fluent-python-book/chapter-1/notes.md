@@ -29,8 +29,8 @@ Some examples,
 ## How special methods are used
 
 1. The special methods are called by interpreter and not by us.
-2. We don't write my\*object.\*\*\_len**\*(). We write len(my_object) and if my_object is an instance of a use defined class, then python
+2. We don't write my\*object.__len__(). We write len(my_object) and if my_object is an instance of a use defined class, then python
    calls the **len\*\* instance methd you implemented.
 
 3. More often than not, the special method call is implicit. For example, the statement for i in x:
-   actually causes the invocation of iter(x), which in turn may call x.**_iter_**() if that is available
+   actually causes the invocation of iter(x), which in turn may call x.__iter__() if that is available
